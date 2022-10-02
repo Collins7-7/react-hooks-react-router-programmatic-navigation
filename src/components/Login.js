@@ -8,7 +8,7 @@ function Login({ setIsLoggedIn }) {
     password: "",
   });
 
-  function handleChange(e) {
+  function handleTheChange(e) {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -31,13 +31,13 @@ function Login({ setIsLoggedIn }) {
         type="text"
         name="username"
         value={formData.username}
-        onChange={handleChange}
+        onChange={handleTheChange}
       />
       <input
         type="password"
         name="password"
         value={formData.password}
-        onChange={handleChange}
+        onChange={handleTheChange}
       />
       <button type="submit">Login</button>
     </form>
